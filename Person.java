@@ -51,7 +51,6 @@ public class Person implements Interface {
             }
         }
     }
-
     public void display() {
         System.out.println("Created contact list is");
         for (Map.Entry m : detailsBook.entrySet()) {
