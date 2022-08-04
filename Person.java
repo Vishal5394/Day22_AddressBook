@@ -92,6 +92,12 @@ public class Person implements Interface {
             noOfAddressBook--;
         }
     }
+    public void searchPerson() {
+        System.out.println("Enter person name to search ");
+        String name = sc.next();
+        Map<String, Contact> searchedPerson = detailsBook.entrySet().stream().filter(e -> e.getKey().equals(name)).collect(Collectors.toMap(e -> e.getKey(), e -> e.getValue()));
+        System.out.println(searchedPerson);
+    }
 
     public void display() {
         System.out.println("Created contact list is");

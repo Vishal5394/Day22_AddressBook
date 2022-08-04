@@ -12,6 +12,7 @@ public class AddressBookMain {
         person.deleteContact();
         person.addToBook();
         person.operation();
+        person.searchPerson();
     
     }
 }

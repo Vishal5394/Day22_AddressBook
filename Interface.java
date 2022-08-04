@@ -17,6 +17,8 @@ public interface Interface {
     void addToBook();
     
     void operation();
+    
+    void searchPerson();
 
 }
 
