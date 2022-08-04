@@ -11,6 +11,8 @@ public interface Interface {
     void addContact();
     
     void editContact();
+    
+    void deleteContact();
 
 }
 
