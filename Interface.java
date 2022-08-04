@@ -7,6 +7,8 @@ public interface Interface {
     void display();
 
     void displayBook();
+    
+    void addContact();
 
 }
 
