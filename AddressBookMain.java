@@ -15,6 +15,8 @@ public class AddressBookMain {
         person.searchPerson();
         person.addContactByCity();
         person.addContactByState();
+        person.viewByCity();
+        person.viewByState();
     
     }
 }

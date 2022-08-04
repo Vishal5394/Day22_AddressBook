@@ -23,6 +23,10 @@ public interface Interface {
     void addContactByCity();
     
     void addContactByState();
+    
+    void viewByCity();
+    
+    void viewByState();
 
 }
 
