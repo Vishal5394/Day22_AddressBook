@@ -8,6 +8,7 @@ public class AddressBookMain {
         person.display();
         person.displayBook();
         person.addContact();
+        person.editContact();
     
     }
 }
