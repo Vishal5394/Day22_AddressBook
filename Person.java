@@ -112,4 +112,37 @@ public class Person implements Interface {
             System.out.println(e.getKey() + "--> " + e.getValue());
         }
     }
-}
+    public void addContactByCity() {
+        System.out.println("Enter how many contacts you want to add");
+        int numOfContacts = sc.nextInt();
+        while (numOfContacts > 0) {
+            System.out.println("Enter Name of city");
+            String cityName = sc.next();
+            if (personByCity.containsKey(cityName)) {
+                System.out.println("Contact already exists!");
+                return;
+            } else {
+                infoContact.info();
+                personByCity.put(city, new Contact(firstName, lastName, address, city, state, zip, phoneNumber, email));
+                numOfContacts--;
+            }
+        }
+        System.out.println(personByCity);
+    }
+    public void addContactByState() {
+        System.out.println("Enter how many contacts you want to add");
+        int numOfContacts = sc.nextInt();
+        while (numOfContacts > 0) {
+            System.out.println("Enter Name of city");
+            String stateName = sc.next();
+            if (personByState.containsKey(stateName)) {
+                System.out.println("Contact already exists!");
+                return;
+            } else {
+                infoContact.info();
+                personByState.put(state, new Contact(firstName, lastName, address, city, state, zip, phoneNumber, email));
+                numOfContacts--;
+            }
+         }
+      }
+   }

@@ -19,6 +19,10 @@ public interface Interface {
     void operation();
     
     void searchPerson();
+    
+    void addContactByCity();
+    
+    void addContactByState();
 
 }
 

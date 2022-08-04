@@ -13,6 +13,8 @@ public class AddressBookMain {
         person.addToBook();
         person.operation();
         person.searchPerson();
+        person.addContactByCity();
+        person.addContactByState();
     
     }
 }
