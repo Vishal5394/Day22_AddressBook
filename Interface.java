@@ -15,6 +15,8 @@ public interface Interface {
     void deleteContact();
     
     void addToBook();
+    
+    void operation();
 
 }
 
