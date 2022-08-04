@@ -27,6 +27,10 @@ public interface Interface {
     void viewByCity();
     
     void viewByState();
+    
+    void sortByCity();
+    
+    void sortByState();
 
 }
 

@@ -167,5 +167,22 @@ public class Person implements Interface {
         } else {
             System.out.println("Person with particular state is not present");
         }
+     }
+    public void sortByCity() {
+
+        Map<String, Contact> sortedByCity = personByCity.entrySet().stream()
+                .sorted(Map.Entry.comparingByKey()).collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue
+                        , (oldValue, newValue) -> oldValue, LinkedHashMap::new));
+        System.out.println("Sorted Address Book " + sortedByCity);
+
     }
+
+    public void sortByState() {
+
+        Map<String, Contact> sortedByState = personByState.entrySet().stream()
+                .sorted(Map.Entry.comparingByKey()).collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue
+                        , (oldValue, newValue) -> oldValue, LinkedHashMap::new));
+        System.out.println("Sorted Address Book " + sortedByState);
+
+     }
    }
