@@ -13,6 +13,8 @@ public interface Interface {
     void editContact();
     
     void deleteContact();
+    
+    void addToBook();
 
 }
 

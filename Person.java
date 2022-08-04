@@ -74,6 +74,16 @@ public class Person implements Interface {
         }
     }
 
+    public void addToBook() {
+        System.out.println("Enter Name of Address Book");
+        String bookName = sc.next();
+        if (!book.containsKey(bookName)) {
+            book.put(bookName, detailsBook);
+        } else {
+            System.out.println("Book already exists!");
+        }
+    }
+
     public void display() {
         System.out.println("Created contact list is");
         for (Map.Entry m : detailsBook.entrySet()) {

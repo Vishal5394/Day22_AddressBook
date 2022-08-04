@@ -10,6 +10,7 @@ public class AddressBookMain {
         person.addContact();
         person.editContact();
         person.deleteContact();
+        person.addToBook();
     
     }
 }
